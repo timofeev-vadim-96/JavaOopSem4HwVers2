@@ -3,7 +3,7 @@ package tasks.impl;
 import tasks.Hero;
 
 public class Warrior extends Hero{
-    private int stamina;
+    public int stamina;
 
     public int getStamina() {
         return stamina;
