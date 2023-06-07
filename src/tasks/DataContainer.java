@@ -2,7 +2,7 @@ package tasks;
 
 import java.util.*;
 
-public class DataContainer <T extends Comparable> implements Iterable<T>{
+public class DataContainer<T extends Comparable> implements Iterable<T> {
     private ArrayList<T> dataList;
 
     public DataContainer() {
@@ -14,24 +14,24 @@ public class DataContainer <T extends Comparable> implements Iterable<T>{
         return new DataIterator<>(dataList);
     }
 
-    public DataContainer add(T element){
+    public DataContainer add(T element) {
         dataList.add(element);
         return this;
     }
 
-    public void remove(int index){
+    public void remove(int index) {
         dataList.remove(index);
     }
 
-    public T get(int index){
-       return dataList.get(index);
+    public T get(int index) {
+        return dataList.get(index);
     }
 
-    public void sort(){
+    public void sort() {
         Collections.sort(dataList);
     }
 
-    public void sort(Comparator comparator){
+    public void sort(Comparator comparator) {
         dataList.sort(comparator);
     }
 
@@ -40,8 +40,8 @@ public class DataContainer <T extends Comparable> implements Iterable<T>{
         return Arrays.toString(dataList.toArray());
     }
 
-    public void printElementsSeparately(){
-        for (T element:dataList) {
+    public void printElementsSeparately() {
+        for (T element : dataList) {
             System.out.println(element);
         }
     }

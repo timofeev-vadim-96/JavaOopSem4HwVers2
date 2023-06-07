@@ -1,6 +1,6 @@
 package tasks;
 
-public abstract class Hero implements Comparable<Hero>{
+public abstract class Hero implements Comparable<Hero> {
     protected String nickname;
     protected int health;
     protected int level;

@@ -2,7 +2,7 @@ package tasks.impl;
 
 import tasks.Hero;
 
-public class Warrior extends Hero{
+public class Warrior extends Hero {
     public int stamina;
 
     public int getStamina() {
